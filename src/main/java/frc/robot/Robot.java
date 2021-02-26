@@ -20,10 +20,10 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  * directory.
  */
 public class Robot extends TimedRobot {
-  private final Hardware m_hardware = new Hardware();
+  private final Hardware m_hardware = new Hardware(0);
   private DifferentialDrive m_robotDrive;
   private final Joystick m_stick = new Joystick(0);
-  private final Timer m_timer = new Timer();
+  private final Timer m_timer = new Timer(0);
   private Field2d m_field;
   private SimpleSimulatedChassis m_chassis;
 
